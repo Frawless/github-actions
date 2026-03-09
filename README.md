@@ -25,6 +25,8 @@ Actions for installing tools and setting up Kubernetes clusters.
 | `dependencies/setup-kind`           | Creates a Kind cluster with local registry and cloud-provider-kind | `kindVersion` (0.31.0), `controlNodes` (1), `workerNodes` (1), `cloudProviderVersion` (0.6.0) |
 | `dependencies/setup-minikube`       | Creates a Minikube cluster with local registry                     | `minikubeVersion` (v1.38.0), `kubeVersion` (v1.38.0)                                          |
 
+Test
+
 ### Build Actions
 
 Actions for building, testing, and releasing Strimzi components.
