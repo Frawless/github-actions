@@ -10,7 +10,7 @@ if [ "$ARCH" == "arm64" ]; then
     ARCH="aarch64"
 fi
 
-wget --https-only --tries=3 --output-document=shellcheck.tar.xz "https://github.com/koalaman/shellcheck/releases/download/v${VERSION}/shellcheck-v${VERSION}.linux.${ARCH}.tar.xz"
+curl -fL --retry 3 -o shellcheck.tar.xz "https://github.com/koalaman/shellcheck/releases/download/v${VERSION}/shellcheck-v${VERSION}.linux.${ARCH}.tar.xz"
 tar xf shellcheck.tar.xz -C /tmp --strip-components 1
 rm -f shellcheck.tar.xz
 chmod +x /tmp/shellcheck
